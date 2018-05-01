@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import codecs
+
+df = pd.read_csv('IPEDS_data01.csv')
+print(df)
+
+x = df['Longitude location of institution']
+y = df['Latitude location of institution']
+
+plt.scatter(x, y)
+plt.show()
